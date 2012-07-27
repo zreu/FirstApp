@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+#import "WMStockAddViewControllerViewController.h"
+
 @class WMDetailViewController;
 
-@interface WMMasterViewController : UITableViewController
+@interface WMMasterViewController : UITableViewController <WMStockAddDelegate>
 
 @property (strong, nonatomic) WMDetailViewController *detailViewController;
+
+- (void) didAddStock:(NSString*)symbol;
 
 @end

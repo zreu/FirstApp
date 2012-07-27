@@ -22,6 +22,8 @@
 		4F70B8C815C1F9B80092A090 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F70B8A315C1F9B80092A090 /* Foundation.framework */; };
 		4F70B8D015C1F9B80092A090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F70B8CE15C1F9B80092A090 /* InfoPlist.strings */; };
 		4F70B8D315C1F9B80092A090 /* FirstAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F70B8D215C1F9B80092A090 /* FirstAppTests.m */; };
+		4F70B8DE15C203140092A090 /* WMStockAddViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F70B8DD15C203140092A090 /* WMStockAddViewControllerViewController.m */; };
+		4F70B8E015C210A20092A090 /* WMStockAddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F70B8DF15C210A20092A090 /* WMStockAddView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,24 +41,27 @@
 		4F70B8A115C1F9B80092A090 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4F70B8A315C1F9B80092A090 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F70B8A515C1F9B80092A090 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4F70B8A915C1F9B80092A090 /* FirstApp-Info.plist */ = {isa = PBXFileReference; path = "FirstApp-Info.plist"; sourceTree = "<group>"; };
+		4F70B8A915C1F9B80092A090 /* FirstApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FirstApp-Info.plist"; sourceTree = "<group>"; };
 		4F70B8AB15C1F9B80092A090 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4F70B8AD15C1F9B80092A090 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4F70B8AF15C1F9B80092A090 /* FirstApp-Prefix.pch */ = {isa = PBXFileReference; path = "FirstApp-Prefix.pch"; sourceTree = "<group>"; };
-		4F70B8B015C1F9B80092A090 /* WMAppDelegate.h */ = {isa = PBXFileReference; path = WMAppDelegate.h; sourceTree = "<group>"; };
+		4F70B8AF15C1F9B80092A090 /* FirstApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirstApp-Prefix.pch"; sourceTree = "<group>"; };
+		4F70B8B015C1F9B80092A090 /* WMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMAppDelegate.h; sourceTree = "<group>"; };
 		4F70B8B115C1F9B80092A090 /* WMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMAppDelegate.m; sourceTree = "<group>"; };
 		4F70B8B415C1F9B80092A090 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		4F70B8B715C1F9B80092A090 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		4F70B8B915C1F9B80092A090 /* WMMasterViewController.h */ = {isa = PBXFileReference; path = WMMasterViewController.h; sourceTree = "<group>"; };
+		4F70B8B915C1F9B80092A090 /* WMMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMMasterViewController.h; sourceTree = "<group>"; };
 		4F70B8BA15C1F9B80092A090 /* WMMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMMasterViewController.m; sourceTree = "<group>"; };
-		4F70B8BC15C1F9B80092A090 /* WMDetailViewController.h */ = {isa = PBXFileReference; path = WMDetailViewController.h; sourceTree = "<group>"; };
+		4F70B8BC15C1F9B80092A090 /* WMDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMDetailViewController.h; sourceTree = "<group>"; };
 		4F70B8BD15C1F9B80092A090 /* WMDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMDetailViewController.m; sourceTree = "<group>"; };
 		4F70B8C415C1F9B80092A090 /* FirstAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F70B8C515C1F9B80092A090 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		4F70B8CD15C1F9B80092A090 /* FirstAppTests-Info.plist */ = {isa = PBXFileReference; path = "FirstAppTests-Info.plist"; sourceTree = "<group>"; };
+		4F70B8CD15C1F9B80092A090 /* FirstAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FirstAppTests-Info.plist"; sourceTree = "<group>"; };
 		4F70B8CF15C1F9B80092A090 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4F70B8D115C1F9B80092A090 /* FirstAppTests.h */ = {isa = PBXFileReference; path = FirstAppTests.h; sourceTree = "<group>"; };
+		4F70B8D115C1F9B80092A090 /* FirstAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstAppTests.h; sourceTree = "<group>"; };
 		4F70B8D215C1F9B80092A090 /* FirstAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstAppTests.m; sourceTree = "<group>"; };
+		4F70B8DC15C203140092A090 /* WMStockAddViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMStockAddViewControllerViewController.h; sourceTree = "<group>"; };
+		4F70B8DD15C203140092A090 /* WMStockAddViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMStockAddViewControllerViewController.m; sourceTree = "<group>"; };
+		4F70B8DF15C210A20092A090 /* WMStockAddView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMStockAddView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +127,9 @@
 				4F70B8B615C1F9B80092A090 /* MainStoryboard_iPad.storyboard */,
 				4F70B8B915C1F9B80092A090 /* WMMasterViewController.h */,
 				4F70B8BA15C1F9B80092A090 /* WMMasterViewController.m */,
+				4F70B8DC15C203140092A090 /* WMStockAddViewControllerViewController.h */,
+				4F70B8DD15C203140092A090 /* WMStockAddViewControllerViewController.m */,
+				4F70B8DF15C210A20092A090 /* WMStockAddView.xib */,
 				4F70B8BC15C1F9B80092A090 /* WMDetailViewController.h */,
 				4F70B8BD15C1F9B80092A090 /* WMDetailViewController.m */,
 				4F70B8A815C1F9B80092A090 /* Supporting Files */,
@@ -233,6 +241,7 @@
 				4F70B8AC15C1F9B80092A090 /* InfoPlist.strings in Resources */,
 				4F70B8B515C1F9B80092A090 /* MainStoryboard_iPhone.storyboard in Resources */,
 				4F70B8B815C1F9B80092A090 /* MainStoryboard_iPad.storyboard in Resources */,
+				4F70B8E015C210A20092A090 /* WMStockAddView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +280,7 @@
 				4F70B8B215C1F9B80092A090 /* WMAppDelegate.m in Sources */,
 				4F70B8BB15C1F9B80092A090 /* WMMasterViewController.m in Sources */,
 				4F70B8BE15C1F9B80092A090 /* WMDetailViewController.m in Sources */,
+				4F70B8DE15C203140092A090 /* WMStockAddViewControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

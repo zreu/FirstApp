@@ -23,6 +23,7 @@
 
 - (void)setDetailItem:(id)newDetailItem
 {
+    DLog();
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
         
@@ -37,6 +38,7 @@
 
 - (void)configureView
 {
+    DLog();
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
@@ -46,6 +48,7 @@
 
 - (void)viewDidLoad
 {
+    DLog();
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
@@ -53,6 +56,7 @@
 
 - (void)viewDidUnload
 {
+    DLog();
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     self.detailDescriptionLabel = nil;
@@ -60,6 +64,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
+    DLog();
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     } else {
@@ -71,6 +76,7 @@
 
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
 {
+    DLog();
     barButtonItem.title = NSLocalizedString(@"Master", @"Master");
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.masterPopoverController = popoverController;
@@ -78,6 +84,7 @@
 
 - (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
 {
+    DLog();
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
